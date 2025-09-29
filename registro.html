@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Suscripción</title>
 </head>
 <body>
+    <header>
+        <h1>Suscripción</h1>
+    </header>
     <form action="#" method="get"> 
         <fieldset>
             <legend>Formulario de inscripción al boletín de noticias</legend>
-            <label>Nombre:</label>
-            <input type="text" name="nombre" placeholder="Escribe tu nombre completo">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
             <br><br>
-            <label>Correo:</label>
-            <input type="text" name="nombre" placeholder="ejemplo@gmail.com">
+            <label for="correo">Correo:</label>
+            <input type="email" id="clave" name="nombre" placeholder="ejemplo@gmail.com" required>
             <br><br>
             <label>
             <input type="checkbox" name="términos" required>
@@ -21,6 +24,7 @@
             </label>
             <br><br>
             <button type="submit">Suscribirse</button>
+            <button type="reset">Resetear</button>
         </fieldset>
     </form>
 </body>
