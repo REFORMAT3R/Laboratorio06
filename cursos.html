@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Cursos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html" target="_blank">Suscripción</a></li>
+                <li><a href="lenguajes.html">Preferencias</a></li>
+                <li><a href="validacion.html">Validación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <fieldset>
+            <label for="nombre">Nombres:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tus nombres completos" required>
+            <br><br>
+            <label for="apellido">Apellidos:</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Escribe tus apellidos completos" required>
+            <br><br>
+            <label for="DNI">Documento de Identidad:</label>
+            <input type="text" id="DNI" name="DNI" min="8" pattern="[0-9]+" required>
+            <br><br>
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required>
+            <br><br>
+            <label>Selección de curso</label>
+            <input type="radio" id="CV1" name="curso" value="CV1">
+            <label for="CV1">Cálculo en una variable</label>
+            <input type="radio" id="IDWeb" name="curso" value="IDWeb">
+            <label for="IDWeb">Introducción al desarrollo web</label>
+            <input type="radio" id="ED" name="curso" value="ED">
+            <label for="ED">Estructuras discretas II</label>
+            <br><br>
+            <label>Seleccionar modalidad</label>
+            <input type="radio" id="presente" name="modalidad" value="presente">
+            <label for="presente">Presencial</label>
+            <input type="radio" id="remoto" name="modalidad" value="remoto">
+            <label for="remoto">Virtual</label>
+            <br><br>
+            <label>Selección de turno</label>
+            <input type="checkbox" id="mañana" name="turno" value="mañana">
+            <label for="mañana">Mañana</label>
+            <input type="checkbox" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Tarde</label>
+            <input type="checkbox" id="noche" name="turno" value="noche">
+            <label for="noche">Noche</label>
+            <br><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </fieldset>
+    </form>
+</body>
+</html>
